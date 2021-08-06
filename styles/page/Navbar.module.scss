@@ -1,0 +1,84 @@
+@import "../variable/color";
+
+.main {
+    width: 100%;
+    background-color: $color-main;
+    height: 100%;
+    .matNavbarMain {
+        display: flex;
+        padding: 10px 0;
+        align-items: center;
+        .matLogo {
+            h3 {
+                color: $color-white;
+                font-family: $font-main;
+                font-weight: $fw-6;
+                cursor: pointer;
+            }
+        }
+        .matMenuList {
+            display: flex;
+            align-items: center;
+            list-style-type: none;
+            flex: 1;
+            margin: 0;
+            .matMenuItem {
+                margin: 0 45px 0 0;
+                .matTitle {
+                    color: $color-white;
+                    text-decoration: none;
+                    font-weight: $fw-4;
+                    font-family: $font-main1;
+                    font-size: 14px;
+                    padding: 7px 14px;
+                    border-radius: 4px;
+                    transition: all 0.25s ease-in-out;
+                    &:hover {
+                        width: 100%;
+                        background-color: $color-tranfer;
+                    }
+                }
+            }
+        }
+    }
+    .matNavbarSearch {
+        display: flex;
+        align-items: center;
+        width: 250px;
+        position: relative;
+        .matInputSearch {
+            outline: none;
+            border-radius: 30px;
+            padding: 3px 10px;
+            border: none;
+            background: $color-tranfer1;
+            width: 100%;
+            color:$color-white
+        }
+        .matIcon {
+            position: absolute;
+            right: 10px;
+            color:$color-white
+        }
+    }
+    .matActionBtn {
+        margin-left: 10px;
+        .matButtonLogin {
+            outline: none;
+            border: none;
+            border-radius: 4px;
+            padding: 2px 10px;
+            background-color: $color-main;
+            transition: all 0.25s ease-in-out;
+            color: $color-white;
+            &:hover {
+                background-color: $color-tranfer;
+            }
+            span {
+                margin-right: 5px;
+            }
+            PersonIcon {
+            }
+        }
+    }
+}

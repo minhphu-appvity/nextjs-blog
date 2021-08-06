@@ -1,0 +1,16 @@
+@import "../variable/color";
+
+.matFormMain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .matFormContent{
+        width: 400px;
+        height:550px;
+        border-radius:4px;
+        border:1px solid red;
+    }
+    .matFormAction{
+        margin-top: 10px;
+    }
+}
